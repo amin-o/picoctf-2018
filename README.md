@@ -20,6 +20,14 @@
 
 #
 
+>zsteg
+
+>photorec
+
+>wireshark
+
+#
+
 >rockyou.txt | make sure it is in /usr/share/wordlists
 
 #
@@ -47,6 +55,11 @@
 <li>Aca-Shell-A</li>
 <li>Client Side is Still Bad</li>
 <li>Logon</li>
+<li>Reading Between the Eyes</li>
+<li>Recovering From the Snap </li>
+<li>Admin Panel</li>
+<li>grep 2</li>
+<li>caesar cipher 1</li>
 
 </ul> 
 
