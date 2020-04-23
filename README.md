@@ -12,6 +12,8 @@
 
 >john
 
+>xxd
+
 #
 
 >python 2.7+
@@ -60,8 +62,17 @@
 <li>Admin Panel</li>
 <li>grep 2</li>
 <li>caesar cipher 1</li>
-
+<li>environ</li>
+<li>ssh-keyz</li>
+<li>No Login</li>
+<li>Mr. Robots</li>
+<li>Irish Name Repo</li>
+<li>hertz</li>
+<li>hex editor</li>
+<li>Secret Agent</li>
+<li>Truly an Artist</li>
 </ul> 
 
 ### TODO
 > aca shell a with pwntools and python
+> solve robots.py using gobuster

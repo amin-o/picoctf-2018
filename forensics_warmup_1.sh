@@ -2,16 +2,13 @@
 
 url="https://2018shell.picoctf.com/static/d6487f8e2cbbb28b5168b512f0ac0710/flag.zip"
 
-if test -f "flag.zip"
+file="flag.zip"
 
-then
+if ! test -f $file ; then
 
-    echo -e "\e[7mflag.zip exists!"
-    exit 1
+    wget $url --no-check-certificate
 
 fi
-
-wget $url --no-check-certificate
 
 for f in *.zip ; do
 
@@ -21,3 +18,8 @@ done
 
 printf "\n"
 echo "picoCTF{welcome_to_forensics}"
+
+printf "\n"
+read -n 1 -s -r -p "Press any key to delete files created by this script and then exit."
+
+rm $file flag.jpg

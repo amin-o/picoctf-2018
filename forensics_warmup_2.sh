@@ -2,18 +2,21 @@
 
 url="https://2018shell.picoctf.com/static/b96c236db4c32ed47e9958c7e461b3c4/flag.png"
 
-if test -f "flag.png" ; then
+file="flag.png"
+file_name="flag"
 
-    mv "flag.png" "flag.jpg"
-    echo "picoCTF{extensions_are_a_lie}"
-    exit 1
+if ! test -f $file ; then
+
+    wget $url --no-check-certificate
 
 fi
 
-wget $url --no-check-certificate
-
-mv "flag.png" "flag.jpg"
+mv $file "$file_name.jpg"
 
 printf "\n"
 echo "picoCTF{extensions_are_a_lie}"
-rm flag.png
+
+printf "\n"
+read -n 1 -s -r -p "Press any key to delete $file_name.jpg and exit the program."
+
+rm "$file_name.jpg"
