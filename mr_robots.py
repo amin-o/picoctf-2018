@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#http://2018shell.picoctf.com:29568/robots.txt
+
 import requests
 import re
 

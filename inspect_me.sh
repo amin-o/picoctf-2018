@@ -1,9 +1,9 @@
 #!/usr/bin/bash
 
-url="http://2018shell.picoctf.com:35349"
+port="35349"
+url="http://2018shell.picoctf.com:$port"
 
 part1=$(curl $url | grep -E -o "picoCTF{.*")
-echo $part1
 part1_cut=${part1::-4}
 
 cssPath="mycss.css"

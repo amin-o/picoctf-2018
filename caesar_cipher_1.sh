@@ -6,7 +6,6 @@ echo "Username:" ; read username
 
 encryptedFlag=$(ssh $username@$url 'cd /problems/caesar-cipher-1_0_931ac10f43e4d2ee03d76f6914a07507 && cat ciphertext')
 
-encryptedFlag="picoCTF{yjhipvddsdasrpthpgrxewtgdqnjytto}"
 encryptedFlag=${encryptedFlag:8}
 encryptedFlag=${encryptedFlag%?}
  

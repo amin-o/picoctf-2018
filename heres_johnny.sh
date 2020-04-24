@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 url="2018shell.picoctf.com"
-port=38860
+port="38860"
 
 passwd="https://2018shell.picoctf.com/static/29633d1bd5ba677d6af455cf61b18f57/passwd"
 shadow="https://2018shell.picoctf.com/static/29633d1bd5ba677d6af455cf61b18f57/shadow"
